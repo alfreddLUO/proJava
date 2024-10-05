@@ -10,3 +10,47 @@ R1.5 The following are all benefits to using Java over machine code:
 5/ With the introduction of Java8, Java is now a declarative and functional programming language.
 6/ The GraalVM is capable of compiling Java programs to o/s targeted binary code, forgoing the JVM altogether.
 
+R2.4 Translating math expressions to Java.
+a. double s;
+   double v;
+   double t;
+   double g;
+   s = s + (v * t) + (0.5 * g * t * t);
+
+b. double FV;
+   double PV;
+   double INT;
+   int YRS;
+   FV = PV * Math.pow((1 + INT), YRS);
+
+c. double G;
+   double p;
+   double m1;
+   double m2;
+   double a;
+   G= 4*(Math.PI*Math.PI)*Math.pow(a,3)/(Math.pow(p,2)*(m1+m2));
+
+d. double c;
+   double a;
+   double b;
+   double gamma;
+   c=Math.sqrt(a*a+b*b-2*a*b*Math.cos(gamma));
+
+
+R2.7 Understanding integer operations, order of precedence, and integer division.
+
+R2.14 How the compiler interprets primitive values
+
+
+R2.17 Pseudocode understading
+
+
+
+R2.22 More pseudocode - you do not need to draw a diagram for this question
+
+
+R3.19 Pseudocode for grade problem
+
+R3.30 Boolean expressions
+R4.12 Implementing loops
+R4.14 Calendar problem
