@@ -101,9 +101,23 @@ g. !b && x != 0: false
 h. !b || x != 0: true
 
 
-
-
-
-
 R4.12 Implementing loops
+1. for-loop: use when you know the number of iterations beforehand
+for(int i=0;i<end;i++){
+
+}
+2. while-loo; use when you want to stop the loop when the conditions in the () are true
+while(condition){
+
+}
+3. do-while-loop: use when you want to execute the code block at least once in spite of the condition.
+do{
+
+} while(condition);
+4. for-each loop: use for iterating the elements of collections, when you don't need the index of the elements, which means you simply need read the value of the element
+for(type element: collections){
+
+}
+
+
 R4.14 Calendar problem
