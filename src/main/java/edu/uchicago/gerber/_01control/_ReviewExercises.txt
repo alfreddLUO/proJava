@@ -121,3 +121,14 @@ for(type element: collections){
 
 
 R4.14 Calendar problem
+//Step 1: get the start day as startDay (0 for Su, 1 for M, ..Sa for 6)  and total days as totalDays for a month
+//Step 2: print the header, "Su M T W Th F Sa"
+//Step 3: print a new line, and then print (startDay)*3 spaces as initial spaces.
+//Step 4: Initial the current day as curDay=1
+//Step 5: for curDay= 1 to totalDays:
+    //if curDay+startDay-1)%7==0:
+        //print new line
+    //if curDay<10:
+        //print curDay+" "+ " "
+    //else:
+        //print curDay+" "+ " " + " "
