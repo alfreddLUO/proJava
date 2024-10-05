@@ -48,14 +48,31 @@ f. (int) Math.round(0.5 * (m + n))=17
 
 
 R2.14 How the compiler interprets primitive values
+Explain the differences between 2, 2.0, '2', "2", and "2.0".
+2: integer
+2.0:double
+'2': character
+"2": String
+"2.0": String
 
 
 R2.17 Pseudocode understading
+//get input-message from user
+//Store input-message in String
+//Split the String using space as regex into firstName, middleName, lastName
+//Get the first letter of each name: firstNameInitial, middleNameInitial, lastNameInitial
+//Combine the initials to form the monogram, monogram= firstNameInitial+middleNameInitial+lastNameInitial
+//Print the monogram in uppercase
+
 
 
 
 R2.22 More pseudocode - you do not need to draw a diagram for this question
-
+//Step 1: Store the string is "SunMonTueWedThuFriSat" and day number is 4
+//Step 2: compute the start position for day number 4, is 4*3=12
+//Step 3: Find the start letter with index 12, which is T
+//Step 4: Extract the substring of names at the starting position 12 with length 3, which is "Thu"
+//Step 5: Output the result
 
 R3.19 Pseudocode for grade problem
 
