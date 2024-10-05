@@ -38,6 +38,14 @@ d. double c;
 
 
 R2.7 Understanding integer operations, order of precedence, and integer division.
+n=17, m=18;
+a. n / 10 + n % 10=1+7=8
+b. n % 2 + m % 2=1+0=1
+c. (m + n) / 2=35/2=17
+d. (m + n) / 2.0= 17.5
+e. (int) (0.5 * (m + n))
+f. (int) Math.round(0.5 * (m + n))=17
+
 
 R2.14 How the compiler interprets primitive values
 
