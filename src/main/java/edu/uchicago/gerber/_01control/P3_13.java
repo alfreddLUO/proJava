@@ -15,25 +15,27 @@ public class P3_13 {
         //use the wrapper class Integer. Use diamond notation from Java7 and omit the right-hand "Integer" if you want
         int num;
 
-        try {
-            String[] THOUSANDS = {"", "M", "MM", "MMM"};
-            String[] HUNDREDS = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
-            String[] TENS = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
-            String[] ONES = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        while(true){
+            try {
+                String[] THOUSANDS = {"", "M", "MM", "MMM"};
+                String[] HUNDREDS = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+                String[] TENS = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+                String[] ONES = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 
-            System.out.print("Please enter a number :");
-            num = scan.nextInt();
+                System.out.print("Please enter a number :");
+                num = scan.nextInt();
 
-            if(num>=1&&num<=3999) {
-                String roman = THOUSANDS[num / 1000] + HUNDREDS[(num % 1000) / 100] + TENS[(num % 100) / 10] + ONES[num % 10];
-                System.out.println("The Roman numeral representation is: " + roman);
-            } else {
+                if(num>=1&&num<=3999) {
+                    String roman = THOUSANDS[num / 1000] + HUNDREDS[(num % 1000) / 100] + TENS[(num % 100) / 10] + ONES[num % 10];
+                    System.out.println("The Roman numeral representation is: " + roman);
+                } else {
                     System.out.println("Please enter a number :");
+                }
+
+
+            } catch ( Exception e) {
+                return;
             }
-
-
-        } catch ( Exception e) {
-            return;
         }
 
     }

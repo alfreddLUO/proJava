@@ -24,17 +24,19 @@ public class E2_6 {
         //use the wrapper class Integer. Use diamond notation from Java7 and omit the right-hand "Integer" if you want
         double meters;
 
-        try {
-            System.out.print("Type double value or \"quit\" to exit:");
-            meters = scan.nextDouble();
+        while(true){
+            try {
+                System.out.print("Type double value or \"quit\" to exit:");
+                meters = scan.nextDouble();
 
-            System.out.println("Measurements in miles: " + getMiles(meters));
-            System.out.println("Measurements in feet: " + getFeet(meters));
-            System.out.println("Measurements in inches: " + getInches(meters));
+                System.out.println("Measurements in miles: " + getMiles(meters));
+                System.out.println("Measurements in feet: " + getFeet(meters));
+                System.out.println("Measurements in inches: " + getInches(meters));
 
 
-        } catch ( Exception e) {
-            return;
+            } catch ( Exception e) {
+                return;
+            }
         }
 
     }

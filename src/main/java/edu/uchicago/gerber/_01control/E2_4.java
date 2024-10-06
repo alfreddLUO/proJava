@@ -26,13 +26,14 @@ public class E2_4 {
         int first;
         int second;
 
-        try {
-            System.out.print("Type first integer value or \"quit\" to exit:");
-            //any value that is not an integer (including "quit") will throw an exception, which breaks out of the loop
-            first = scan.nextInt();
-            System.out.print("Type second integer value or \"quit\" to exit:");
-            //any value that is not an integer (including "quit") will throw an exception, which breaks out of the loop
-            second = scan.nextInt();
+        while(true){
+            try {
+                System.out.print("Type first integer value or \"quit\" to exit:");
+                //any value that is not an integer (including "quit") will throw an exception, which breaks out of the loop
+                first = scan.nextInt();
+                System.out.print("Type second integer value or \"quit\" to exit:");
+                //any value that is not an integer (including "quit") will throw an exception, which breaks out of the loop
+                second = scan.nextInt();
 
 //            • The sum
 //            • The difference
@@ -41,16 +42,17 @@ public class E2_4 {
 //            • The distance (absolute value of the difference)
 //            • The maximum (the larger of the two)
 //            • The minimum (the smaller of the two)
-            System.out.println("The sum:" + getSum(first, second));
-            System.out.println("The difference:" + getDifference(first, second));
-            System.out.println("The Product:" + getProduct(first, second));
-            System.out.println("The Average:" + getAvarage(first, second));
-            System.out.println("The distance:" + getDistance(first, second));
-            System.out.println("The Maximum:" + getMax(first, second));
-            System.out.println("The Minimum:" + getMin(first, second));
+                System.out.println("The sum:" + getSum(first, second));
+                System.out.println("The difference:" + getDifference(first, second));
+                System.out.println("The Product:" + getProduct(first, second));
+                System.out.println("The Average:" + getAvarage(first, second));
+                System.out.println("The distance:" + getDistance(first, second));
+                System.out.println("The Maximum:" + getMax(first, second));
+                System.out.println("The Minimum:" + getMin(first, second));
 
-        } catch ( Exception e) {
-            return;
+            } catch ( Exception e) {
+                return;
+            }
         }
 
     }
