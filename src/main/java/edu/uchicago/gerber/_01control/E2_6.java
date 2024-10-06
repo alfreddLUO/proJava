@@ -25,18 +25,9 @@ public class E2_6 {
         double meters;
 
         try {
-            System.out.print("Type first integer value or \"quit\" to exit:");
-            //any value that is not an integer (including "quit") will throw an exception, which breaks out of the loop
+            System.out.print("Type double value or \"quit\" to exit:");
             meters = scan.nextDouble();
 
-
-//            • The sum
-//            • The difference
-//            • The product
-//            • The average
-//            • The distance (absolute value of the difference)
-//            • The maximum (the larger of the two)
-//            • The minimum (the smaller of the two)
             System.out.println("Measurements in miles: " + getMiles(meters));
             System.out.println("Measurements in feet: " + getFeet(meters));
             System.out.println("Measurements in inches: " + getInches(meters));
