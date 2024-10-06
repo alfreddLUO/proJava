@@ -11,12 +11,12 @@ public class E2_6 {
 
     public static void main(String[] args) {
 
-        //Write a program that prompts the user for two integers and then prints
+        //Write a program that prompts the user for a measurement in meters and then converts it to miles, feet, and inches.
 
         //pseudocode
         //get two integer
             //ask user for integer value or type quit to exit
-            //store integer value in two variable
+            //store integer value into variable
         //print the required value
 
 
